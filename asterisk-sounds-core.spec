@@ -4,7 +4,7 @@
 Summary: Core Sounds for Asterisk, The Open Source PBX
 Name: asterisk-sounds-core
 Version: 1.5
-Release: 1%{dist}
+Release: 2%{dist}
 License: GPL
 Group: Utilities/System
 Source10: http://downloads.digium.com/pub/telephony/sounds/releases/asterisk-core-sounds-en-ulaw-%{version}.tar.gz
@@ -230,6 +230,72 @@ This package contains Asterisk core sounds - en_GB - alaw.
 
 %description en_GB-wideband
 This package contains Asterisk core sounds - en_GB - sln16.
+
+%pre en-ulaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en-alaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en-wideband
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en_AU-ulaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en_AU-alaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en_AU-wideband
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre es-ulaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre es-alaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre es-wideband
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre fr-ulaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre fr-alaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre fr-wideband
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre ja-ulaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre ja-alaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre ja-wideband
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre it-ulaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre it-alaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre it-wideband
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en_GB-ulaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en_GB-alaw
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre en_GB-wideband
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
+
+%pre
+useradd -r -M -s /bin/bash -d /home/asterisk asterisk 2> /dev/null || :
 
 %prep
 
