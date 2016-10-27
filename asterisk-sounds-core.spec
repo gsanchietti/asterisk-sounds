@@ -51,6 +51,9 @@ Vendor: Sangoma Technologies Corporation
 Packager: Rob Thomas <rthomas@sangoma.com>
 BuildRequires: wget
 
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
+
 %description
 Asterisk is an open source PBX and telephony development platform.  Asterisk
 can both replace a conventional PBX and act as a platform for the
@@ -67,106 +70,149 @@ hardware, see http://www.asterisk.org
 Summary: Asterisk core sounds - en - ulaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en-alaw
 Summary: Asterisk core sounds - en - alaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en-wideband
 Summary: Asterisk core sounds - en - High Definition Audio.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en_AU-ulaw
 Summary: Asterisk core sounds - en_AU - ulaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en_AU-alaw
 Summary: Asterisk core sounds - en_AU - alaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en_AU-wideband
 Summary: Asterisk core sounds - en_AU - High Definition Audio.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires: shadow-utils
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package es-ulaw
 Summary: Asterisk core sounds - es - ulaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package es-alaw
 Summary: Asterisk core sounds - es - alaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package es-wideband
 Summary: Asterisk core sounds - es - High Definition Audio.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package fr-ulaw
 Summary: Asterisk core sounds - fr - ulaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package fr-alaw
 Summary: Asterisk core sounds - fr - alaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package fr-wideband
 Summary: Asterisk core sounds - fr - High Definition Audio.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package it-ulaw
 Summary: Asterisk core sounds - it - ulaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package it-alaw
 Summary: Asterisk core sounds - it - alaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package it-wideband
 Summary: Asterisk core sounds - it - High Definition Audio.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package ja-ulaw
 Summary: Asterisk core sounds - ja - ulaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package ja-alaw
 Summary: Asterisk core sounds - ja - alaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package ja-wideband
 Summary: Asterisk core sounds - ja - High Definition Audio.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en_GB-ulaw
 Summary: Asterisk core sounds - en_GB - ulaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en_GB-alaw
 Summary: Asterisk core sounds - en_GB - alaw.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %package en_GB-wideband
 Summary: Asterisk core sounds - ja - High Definition Audio.
 Group: Utilities/System
 Provides: %{name} = %{version}-%{release}
+Requires(pre):    %{_sbindir}/useradd
+Requires(pre):    %{_sbindir}/groupadd
 
 %description en-ulaw
 This package contains Asterisk core sounds - en - ulaw.
